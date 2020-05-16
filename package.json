@@ -1,0 +1,30 @@
+{
+  "name": "developergarten-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node 'dist/server.js'",
+    "build": "tsc -p . && ncp src/schema dist/schema",
+    "dev": "nodemon 'src/index.ts' --exec 'ts-node' src/index.ts -e ts,graphql"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.0",
+    "@types/express": "^4.17.6",
+    "@types/graphql": "^14.5.0",
+    "@types/graphql-depth-limit": "^1.1.2",
+    "@types/node": "^14.0.1",
+    "graphql-depth-limit": "^1.1.0",
+    "graphql-import": "^1.0.2",
+    "graphql-import-node": "^0.0.4",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.1",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "apollo-server-express": "^2.13.1",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "graphql": "^15.0.0"
+  }
+}
