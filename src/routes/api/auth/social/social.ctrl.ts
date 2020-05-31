@@ -52,7 +52,7 @@ async function getSocialAccount(params: { uid: number | string; provider: Social
   });
   return socialAccount;
 }
-
+// test
 // async function syncProfileImage(url: string, user: User) {
 //   const result = await downloadFile(url);
 //   // create userImage
